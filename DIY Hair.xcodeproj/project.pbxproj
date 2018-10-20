@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A7E69B3E15DB4ABA8CDE828 /* Pods_Ability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97E9928C0B428F5620852D1 /* Pods_Ability.framework */; };
+		B11AA22E1FF0E7C500F98203 /* NSString+SHA1.m in Sources */ = {isa = PBXBuildFile; fileRef = B11AA22D1FF0E7C500F98203 /* NSString+SHA1.m */; };
+		B136C5D21FEE80B200658B76 /* Ability.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B136C5D01FEE80B200658B76 /* Ability.xcdatamodeld */; };
+		B136C5E21FEE80B200658B76 /* DIY HairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B136C5E11FEE80B200658B76 /* DIY HairTests.swift */; };
+		B136C5ED1FEE80B200658B76 /* DIY HairUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B136C5EC1FEE80B200658B76 /* DIY HairUITests.swift */; };
+		EE53D474217B203A00959AA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE53D470217B203A00959AA0 /* LaunchScreen.storyboard */; };
+		EE53D475217B203A00959AA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE53D472217B203A00959AA0 /* Main.storyboard */; };
+		EE53D477217B25FF00959AA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE53D476217B25FF00959AA0 /* Assets.xcassets */; };
+		EE9B55272176D4A2002D3DE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9B55262176D4A2002D3DE1 /* AppDelegate.swift */; };
+		EE9B55292176D4B3002D3DE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9B55282176D4B3002D3DE1 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B136C5DE1FEE80B200658B76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B136C5BE1FEE80B200658B76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B136C5C51FEE80B200658B76;
+			remoteInfo = Ability;
+		};
+		B136C5E91FEE80B200658B76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B136C5BE1FEE80B200658B76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B136C5C51FEE80B200658B76;
+			remoteInfo = Ability;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2465112042A47600978D33AA /* Pods-Ability.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ability.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ability/Pods-Ability.debug.xcconfig"; sourceTree = "<group>"; };
+		6D6AB2AEB71F22A6A013BEEC /* Pods-Ability.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ability.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ability/Pods-Ability.release.xcconfig"; sourceTree = "<group>"; };
+		B11AA22C1FF0E79400F98203 /* NSString+SHA1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SHA1.h"; sourceTree = "<group>"; };
+		B11AA22D1FF0E7C500F98203 /* NSString+SHA1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SHA1.m"; sourceTree = "<group>"; };
+		B136C5C61FEE80B200658B76 /* DIY Hair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DIY Hair.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B136C5D11FEE80B200658B76 /* Ability.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ability.xcdatamodel; sourceTree = "<group>"; };
+		B136C5D81FEE80B200658B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B136C5DD1FEE80B200658B76 /* DIY HairTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DIY HairTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B136C5E11FEE80B200658B76 /* DIY HairTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DIY HairTests.swift"; sourceTree = "<group>"; };
+		B136C5E31FEE80B200658B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B136C5E81FEE80B200658B76 /* DIY HairUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DIY HairUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B136C5EC1FEE80B200658B76 /* DIY HairUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DIY HairUITests.swift"; sourceTree = "<group>"; };
+		B136C5EE1FEE80B200658B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B136C5FA1FEE834000658B76 /* RongCloud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RongCloud.h; sourceTree = "<group>"; };
+		C97E9928C0B428F5620852D1 /* Pods_Ability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE53D471217B203A00959AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE53D473217B203A00959AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE53D476217B25FF00959AA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE9B55262176D4A2002D3DE1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE9B55282176D4B3002D3DE1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B136C5C31FEE80B200658B76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A7E69B3E15DB4ABA8CDE828 /* Pods_Ability.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B136C5DA1FEE80B200658B76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B136C5E51FEE80B200658B76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CD5B0C2BE95792BFDB3A16B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2465112042A47600978D33AA /* Pods-Ability.debug.xcconfig */,
+				6D6AB2AEB71F22A6A013BEEC /* Pods-Ability.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B136C5BD1FEE80B200658B76 = {
+			isa = PBXGroup;
+			children = (
+				B136C5FA1FEE834000658B76 /* RongCloud.h */,
+				B136C5C81FEE80B200658B76 /* DIY Hair */,
+				B136C5E01FEE80B200658B76 /* DIY HairTests */,
+				B136C5EB1FEE80B200658B76 /* DIY HairUITests */,
+				B136C5C71FEE80B200658B76 /* Products */,
+				5CD5B0C2BE95792BFDB3A16B /* Pods */,
+				E084C8CCE172F55C7DEC7F61 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B136C5C71FEE80B200658B76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B136C5C61FEE80B200658B76 /* DIY Hair.app */,
+				B136C5DD1FEE80B200658B76 /* DIY HairTests.xctest */,
+				B136C5E81FEE80B200658B76 /* DIY HairUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B136C5C81FEE80B200658B76 /* DIY Hair */ = {
+			isa = PBXGroup;
+			children = (
+				EE53D476217B25FF00959AA0 /* Assets.xcassets */,
+				EE9B55262176D4A2002D3DE1 /* AppDelegate.swift */,
+				EE53D470217B203A00959AA0 /* LaunchScreen.storyboard */,
+				EE53D472217B203A00959AA0 /* Main.storyboard */,
+				EE9B55282176D4B3002D3DE1 /* ViewController.swift */,
+				B11AA22C1FF0E79400F98203 /* NSString+SHA1.h */,
+				B11AA22D1FF0E7C500F98203 /* NSString+SHA1.m */,
+				B136C5D81FEE80B200658B76 /* Info.plist */,
+				B136C5D01FEE80B200658B76 /* Ability.xcdatamodeld */,
+			);
+			path = "DIY Hair";
+			sourceTree = "<group>";
+		};
+		B136C5E01FEE80B200658B76 /* DIY HairTests */ = {
+			isa = PBXGroup;
+			children = (
+				B136C5E11FEE80B200658B76 /* DIY HairTests.swift */,
+				B136C5E31FEE80B200658B76 /* Info.plist */,
+			);
+			path = "DIY HairTests";
+			sourceTree = "<group>";
+		};
+		B136C5EB1FEE80B200658B76 /* DIY HairUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B136C5EC1FEE80B200658B76 /* DIY HairUITests.swift */,
+				B136C5EE1FEE80B200658B76 /* Info.plist */,
+			);
+			path = "DIY HairUITests";
+			sourceTree = "<group>";
+		};
+		E084C8CCE172F55C7DEC7F61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C97E9928C0B428F5620852D1 /* Pods_Ability.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B136C5C51FEE80B200658B76 /* DIY Hair */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B136C5F11FEE80B200658B76 /* Build configuration list for PBXNativeTarget "DIY Hair" */;
+			buildPhases = (
+				6C12F96C0CD5F9610F64D664 /* [CP] Check Pods Manifest.lock */,
+				B136C5C21FEE80B200658B76 /* Sources */,
+				B136C5C31FEE80B200658B76 /* Frameworks */,
+				B136C5C41FEE80B200658B76 /* Resources */,
+				E9CFF07308CC649CECEB9F7C /* [CP] Embed Pods Frameworks */,
+				28DE6A139EE03018306FEF1E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DIY Hair";
+			productName = Ability;
+			productReference = B136C5C61FEE80B200658B76 /* DIY Hair.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B136C5DC1FEE80B200658B76 /* DIY HairTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B136C5F41FEE80B200658B76 /* Build configuration list for PBXNativeTarget "DIY HairTests" */;
+			buildPhases = (
+				B136C5D91FEE80B200658B76 /* Sources */,
+				B136C5DA1FEE80B200658B76 /* Frameworks */,
+				B136C5DB1FEE80B200658B76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B136C5DF1FEE80B200658B76 /* PBXTargetDependency */,
+			);
+			name = "DIY HairTests";
+			productName = AbilityTests;
+			productReference = B136C5DD1FEE80B200658B76 /* DIY HairTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B136C5E71FEE80B200658B76 /* DIY HairUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B136C5F71FEE80B200658B76 /* Build configuration list for PBXNativeTarget "DIY HairUITests" */;
+			buildPhases = (
+				B136C5E41FEE80B200658B76 /* Sources */,
+				B136C5E51FEE80B200658B76 /* Frameworks */,
+				B136C5E61FEE80B200658B76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B136C5EA1FEE80B200658B76 /* PBXTargetDependency */,
+			);
+			name = "DIY HairUITests";
+			productName = AbilityUITests;
+			productReference = B136C5E81FEE80B200658B76 /* DIY HairUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B136C5BE1FEE80B200658B76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = blueGrey;
+				TargetAttributes = {
+					B136C5C51FEE80B200658B76 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B136C5DC1FEE80B200658B76 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B136C5C51FEE80B200658B76;
+					};
+					B136C5E71FEE80B200658B76 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B136C5C51FEE80B200658B76;
+					};
+				};
+			};
+			buildConfigurationList = B136C5C11FEE80B200658B76 /* Build configuration list for PBXProject "DIY Hair" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B136C5BD1FEE80B200658B76;
+			productRefGroup = B136C5C71FEE80B200658B76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B136C5C51FEE80B200658B76 /* DIY Hair */,
+				B136C5DC1FEE80B200658B76 /* DIY HairTests */,
+				B136C5E71FEE80B200658B76 /* DIY HairUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B136C5C41FEE80B200658B76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE53D475217B203A00959AA0 /* Main.storyboard in Resources */,
+				EE53D477217B25FF00959AA0 /* Assets.xcassets in Resources */,
+				EE53D474217B203A00959AA0 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B136C5DB1FEE80B200658B76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B136C5E61FEE80B200658B76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28DE6A139EE03018306FEF1E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ability/Pods-Ability-resources.sh",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ability/Pods-Ability-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C12F96C0CD5F9610F64D664 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ability-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9CFF07308CC649CECEB9F7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ability/Pods-Ability-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AVOSCloud/AVOSCloud.framework",
+				"${BUILT_PRODUCTS_DIR}/AVOSCloudIM/AVOSCloudIM.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GrowingTextView/GrowingTextView.framework",
+				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
+				"${BUILT_PRODUCTS_DIR}/KYCircularProgress/KYCircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/LeanCloud/LeanCloud.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SGPagingView/SGPagingView.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AVOSCloud.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AVOSCloudIM.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GrowingTextView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYCircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LeanCloud.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SGPagingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ability/Pods-Ability-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B136C5C21FEE80B200658B76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9B55272176D4A2002D3DE1 /* AppDelegate.swift in Sources */,
+				EE9B55292176D4B3002D3DE1 /* ViewController.swift in Sources */,
+				B11AA22E1FF0E7C500F98203 /* NSString+SHA1.m in Sources */,
+				B136C5D21FEE80B200658B76 /* Ability.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B136C5D91FEE80B200658B76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B136C5E21FEE80B200658B76 /* DIY HairTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B136C5E41FEE80B200658B76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B136C5ED1FEE80B200658B76 /* DIY HairUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B136C5DF1FEE80B200658B76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B136C5C51FEE80B200658B76 /* DIY Hair */;
+			targetProxy = B136C5DE1FEE80B200658B76 /* PBXContainerItemProxy */;
+		};
+		B136C5EA1FEE80B200658B76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B136C5C51FEE80B200658B76 /* DIY Hair */;
+			targetProxy = B136C5E91FEE80B200658B76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE53D470217B203A00959AA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE53D471217B203A00959AA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EE53D472217B203A00959AA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE53D473217B203A00959AA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B136C5EF1FEE80B200658B76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B136C5F01FEE80B200658B76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B136C5F21FEE80B200658B76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2465112042A47600978D33AA /* Pods-Ability.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VLQ5AZ3L2;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/DIY Hair/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-015110253.Ability";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = RongCloud.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B136C5F31FEE80B200658B76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D6AB2AEB71F22A6A013BEEC /* Pods-Ability.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VLQ5AZ3L2;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/DIY Hair/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-015110253.Ability";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = RongCloud.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B136C5F51FEE80B200658B76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AbilityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-015110253.AbilityTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DIY Hair.app/DIY Hair";
+			};
+			name = Debug;
+		};
+		B136C5F61FEE80B200658B76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AbilityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-015110253.AbilityTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DIY Hair.app/DIY Hair";
+			};
+			name = Release;
+		};
+		B136C5F81FEE80B200658B76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AbilityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-015110253.AbilityUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ability;
+			};
+			name = Debug;
+		};
+		B136C5F91FEE80B200658B76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AbilityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-015110253.AbilityUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ability;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B136C5C11FEE80B200658B76 /* Build configuration list for PBXProject "DIY Hair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B136C5EF1FEE80B200658B76 /* Debug */,
+				B136C5F01FEE80B200658B76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B136C5F11FEE80B200658B76 /* Build configuration list for PBXNativeTarget "DIY Hair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B136C5F21FEE80B200658B76 /* Debug */,
+				B136C5F31FEE80B200658B76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B136C5F41FEE80B200658B76 /* Build configuration list for PBXNativeTarget "DIY HairTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B136C5F51FEE80B200658B76 /* Debug */,
+				B136C5F61FEE80B200658B76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B136C5F71FEE80B200658B76 /* Build configuration list for PBXNativeTarget "DIY HairUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B136C5F81FEE80B200658B76 /* Debug */,
+				B136C5F91FEE80B200658B76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B136C5D01FEE80B200658B76 /* Ability.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B136C5D11FEE80B200658B76 /* Ability.xcdatamodel */,
+			);
+			currentVersion = B136C5D11FEE80B200658B76 /* Ability.xcdatamodel */;
+			path = Ability.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B136C5BE1FEE80B200658B76 /* Project object */;
+}
