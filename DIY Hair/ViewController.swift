@@ -11,7 +11,8 @@ import LeanCloud
 import AVOSCloud
 class ViewController: UIViewController {
 
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var te: UIImageView!
+  
     var image1=UIImage(named: "baiyun")
     var image2=UIImage(named: "baiyun")
     override func viewDidLoad() {
@@ -37,7 +38,8 @@ class ViewController: UIViewController {
             image2=UIImage(data: U.getData()!)
         }
         // Do any additional setup after loading the view, typically from a nib.
-      //  image.image=image2
+        
+      te.image=image2
     }
 
     override func didReceiveMemoryWarning() {
