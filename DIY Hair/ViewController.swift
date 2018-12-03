@@ -38,7 +38,7 @@ class ViewController: UIViewController {
             image2=UIImage(data: U.getData()!)
         }
         // Do any additional setup after loading the view, typically from a nib.
-        
+        print("sada")
       te.image=image2
     }
 
