@@ -66,7 +66,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEv-Cn-7Qk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2873" y="-2475"/>
+            <point key="canvasLocation" x="-2684" y="-2499"/>
         </scene>
         <!--HairDetails-->
         <scene sceneID="t6k-gn-2Xb">
@@ -77,14 +77,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入你的发型名字" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pvO-iz-3r3">
-                                <rect key="frame" x="16" y="92" width="150" height="30"/>
+                                <rect key="frame" x="100" y="98" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="h3B-9k-ow8">
-                                <rect key="frame" x="16" y="130" width="300" height="300"/>
+                                <rect key="frame" x="22" y="146" width="330" height="330"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -92,7 +92,7 @@
                                 </connections>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="DLa-81-sHA" customClass="RatingControl" customModule="DIY_Hair" customModuleProvider="target">
-                                <rect key="frame" x="16" y="493" width="319" height="84"/>
+                                <rect key="frame" x="28" y="498" width="319" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                         </subviews>
@@ -128,7 +128,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1982" y="-2504"/>
+            <point key="canvasLocation" x="-1863.2" y="-2528.185907046477"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fbx-Cy-m8k">

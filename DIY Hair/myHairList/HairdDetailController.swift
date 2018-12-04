@@ -36,17 +36,7 @@ class HairdDetailController: UIViewController, UITextFieldDelegate, UIImagePicke
             ratingControl.rating = hair.rating
         }
 
-        let  query=AVQuery(className: "Todo")
-        query.whereKey("objectId", equalTo: "5bc6acc99f545400707f2485")
-        let temp=query.findObjects() as! [AVObject]
-        if(temp.count>0)
-        {
-            let U=temp[0]["image"] as! AVFile
-            image2=UIImage(data: U.getData()!)
-        }
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        te.image=image2
+      
         
         
     }

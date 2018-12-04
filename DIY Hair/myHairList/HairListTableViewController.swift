@@ -13,9 +13,28 @@ class HairListTableViewController: UITableViewController {
 
     //MARK: Properties
     var hairLists = [HairDetails]()
+    var myimage:UIImage?
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadhairList()
+        let  query=AVQuery(className: "HairstyleStore")
+        query.whereKey("type", equalTo: "11")
+        let temp=query.findObjects() as! [AVObject]
+        if(temp.count>0)
+        {
+            for i in 0..<temp.count
+            {
+                let name=temp[i]["name"]
+                print("******************/(name)")
+                let score=temp[i]["score"]
+                let U=temp[i]["image"] as! AVFile
+                myimage=UIImage(data: U.getData()!)
+                loadhairList(photo: myimage!,name: name as! String,scroe: score as! Int)
+            }
+            
+        }
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -39,25 +58,11 @@ class HairListTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return hairLists.count
     }
-    private func  loadhairList() {
-        
-        let photo1 = UIImage(named: "meal1")
-        let photo2 = UIImage(named: "meal2")
-        let photo3 = UIImage(named: "meal3")
-        
-        guard let  hairList1=HairDetails(name: "Caprese Salad", photo: photo1, rating: 4) else {
+    private func  loadhairList(photo:UIImage,name:String,scroe:Int) {
+        guard let  hairList1=HairDetails(name: name, photo: photo, rating: scroe/2) else {
             fatalError("Unable to instantiate meal1")
         }
-        
-        guard let hairList2 = HairDetails(name: "Chicken and Potatoes", photo: photo2, rating: 5) else {
-            fatalError("Unable to instantiate meal2")
-        }
-        
-        guard let hairList3 = HairDetails(name: "Pasta with Meatballs", photo: photo3, rating: 3) else {
-            fatalError("Unable to instantiate meal2")
-        }
-        
-        hairLists += [hairList1, hairList2, hairList3]
+        hairLists.append(hairList1)
     }
     
    
