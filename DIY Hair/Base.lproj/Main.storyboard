@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nul-Xw-h1Q">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,28 +10,167 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--HairList-->
+        <scene sceneID="pD5-MO-l93">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DIY_Hair" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="gn1-8C-Yrr" customClass="HairListTableViewController" customModule="DIY_Hair" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lN0-QT-H7Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HairTableViewCell" rowHeight="90" id="ncY-4e-GxF" customClass="HairListTableViewCell" customModule="DIY_Hair" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ncY-4e-GxF" id="xIc-3a-gkV">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nAh-00-Y8Q">
+                                            <rect key="frame" x="9" y="-1" width="90" height="90"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sva-3v-9Ue">
+                                            <rect key="frame" x="107" y="0.0" width="252" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YNX-Tl-oDY" customClass="RatingControl" customModule="DIY_Hair" customModuleProvider="target">
+                                            <rect key="frame" x="114" y="38" width="245" height="51"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </stackView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="sva-3v-9Ue" id="qe7-HU-s7Z"/>
+                                    <outlet property="photoImageView" destination="nAh-00-Y8Q" id="meu-5P-eEO"/>
+                                    <outlet property="ratingControl" destination="YNX-Tl-oDY" id="QWS-Uw-ri8"/>
+                                    <segue destination="g2g-Jf-d5o" kind="show" identifier="ShowDetail" id="Wta-Cq-qEG"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gn1-8C-Yrr" id="aBA-x4-1DT"/>
+                            <outlet property="delegate" destination="gn1-8C-Yrr" id="tN0-Jp-bFK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="HairList" id="iaE-Cg-WHT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="97O-55-KRo">
+                            <connections>
+                                <segue destination="E5d-1D-e22" kind="presentation" identifier="AddItem" id="urE-qE-LGD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oEv-Cn-7Qk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2873" y="-2475"/>
+        </scene>
+        <!--HairDetails-->
+        <scene sceneID="t6k-gn-2Xb">
+            <objects>
+                <viewController id="g2g-Jf-d5o" customClass="HairdDetailController" customModule="DIY_Hair" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sv2-I0-c4F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="te" translatesAutoresizingMaskIntoConstraints="NO" id="ldH-s1-kZg" userLabel="te">
-                                <rect key="frame" x="67" y="258" width="240" height="128"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入你的发型名字" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pvO-iz-3r3">
+                                <rect key="frame" x="16" y="92" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="h3B-9k-ow8">
+                                <rect key="frame" x="16" y="130" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QWS-hn-bvh" appends="YES" id="anD-HG-iPl"/>
+                                </connections>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="DLa-81-sHA" customClass="RatingControl" customModule="DIY_Hair" customModuleProvider="target">
+                                <rect key="frame" x="16" y="493" width="319" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Uo7-cH-rMm"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="HairDetails" id="hIT-lo-KED">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ezw-DX-Y9Q">
+                            <connections>
+                                <action selector="cancel:" destination="g2g-Jf-d5o" id="aWU-KM-XiW"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="2YA-8J-1EU">
+                            <connections>
+                                <segue destination="gBs-hN-xJx" kind="unwind" unwindAction="unwindToHairListWithSender:" id="a92-Hg-UFJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="te" destination="ldH-s1-kZg" id="v2p-Tj-aDi"/>
+                        <outlet property="nameTextField" destination="pvO-iz-3r3" id="DJ3-Kd-NSc"/>
+                        <outlet property="photoImageView" destination="h3B-9k-ow8" id="wGm-Ox-PwG"/>
+                        <outlet property="ratingControl" destination="DLa-81-sHA" id="jlP-dG-0IG"/>
+                        <outlet property="saveButton" destination="2YA-8J-1EU" id="qOA-Ny-bcK"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W2u-2D-LWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gBs-hN-xJx" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="QWS-hn-bvh">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="g2g-Jf-d5o" id="0IA-Pi-Bll"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-1982" y="-2504"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fbx-Cy-m8k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nul-Xw-h1Q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ek9-nA-NiB">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gn1-8C-Yrr" kind="relationship" relationship="rootViewController" id="E1Z-cR-xJg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXD-sf-pye" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3614" y="-2493"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EiS-mK-MFL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E5d-1D-e22" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lld-hH-ypa">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="g2g-Jf-d5o" kind="relationship" relationship="rootViewController" id="RNH-oe-keT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v1M-Si-Vs8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2119" y="-2006"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultPhoto" width="540" height="540"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Wta-Cq-qEG"/>
+    </inferredMetricsTieBreakers>
 </document>

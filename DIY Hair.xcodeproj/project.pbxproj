@@ -16,7 +16,11 @@
 		EE53D475217B203A00959AA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE53D472217B203A00959AA0 /* Main.storyboard */; };
 		EE53D477217B25FF00959AA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE53D476217B25FF00959AA0 /* Assets.xcassets */; };
 		EE9B55272176D4A2002D3DE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9B55262176D4A2002D3DE1 /* AppDelegate.swift */; };
-		EE9B55292176D4B3002D3DE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9B55282176D4B3002D3DE1 /* ViewController.swift */; };
+		EE9B55292176D4B3002D3DE1 /* HairdDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9B55282176D4B3002D3DE1 /* HairdDetailController.swift */; };
+		EEA44ED221B6181D0070F483 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA44ED121B6181D0070F483 /* RatingControl.swift */; };
+		EEA44ED421B61EA10070F483 /* HairDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA44ED321B61EA10070F483 /* HairDetails.swift */; };
+		EEA44ED621B61FF90070F483 /* HairListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA44ED521B61FF90070F483 /* HairListTableViewCell.swift */; };
+		EEA44ED821B622400070F483 /* HairListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA44ED721B622400070F483 /* HairListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +60,11 @@
 		EE53D473217B203A00959AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE53D476217B25FF00959AA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE9B55262176D4A2002D3DE1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE9B55282176D4B3002D3DE1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE9B55282176D4B3002D3DE1 /* HairdDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairdDetailController.swift; sourceTree = "<group>"; };
+		EEA44ED121B6181D0070F483 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		EEA44ED321B61EA10070F483 /* HairDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairDetails.swift; sourceTree = "<group>"; };
+		EEA44ED521B61FF90070F483 /* HairListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairListTableViewCell.swift; sourceTree = "<group>"; };
+		EEA44ED721B622400070F483 /* HairListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,11 +128,11 @@
 		B136C5C81FEE80B200658B76 /* DIY Hair */ = {
 			isa = PBXGroup;
 			children = (
+				EE1312F621B54D14000635F6 /* myHairList */,
 				EE53D476217B25FF00959AA0 /* Assets.xcassets */,
 				EE9B55262176D4A2002D3DE1 /* AppDelegate.swift */,
 				EE53D470217B203A00959AA0 /* LaunchScreen.storyboard */,
 				EE53D472217B203A00959AA0 /* Main.storyboard */,
-				EE9B55282176D4B3002D3DE1 /* ViewController.swift */,
 				B11AA22C1FF0E79400F98203 /* NSString+SHA1.h */,
 				B11AA22D1FF0E7C500F98203 /* NSString+SHA1.m */,
 				B136C5D81FEE80B200658B76 /* Info.plist */,
@@ -157,6 +165,18 @@
 				C97E9928C0B428F5620852D1 /* Pods_Ability.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE1312F621B54D14000635F6 /* myHairList */ = {
+			isa = PBXGroup;
+			children = (
+				EE9B55282176D4B3002D3DE1 /* HairdDetailController.swift */,
+				EEA44ED121B6181D0070F483 /* RatingControl.swift */,
+				EEA44ED321B61EA10070F483 /* HairDetails.swift */,
+				EEA44ED521B61FF90070F483 /* HairListTableViewCell.swift */,
+				EEA44ED721B622400070F483 /* HairListTableViewController.swift */,
+			);
+			path = myHairList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,8 +400,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE9B55272176D4A2002D3DE1 /* AppDelegate.swift in Sources */,
-				EE9B55292176D4B3002D3DE1 /* ViewController.swift in Sources */,
+				EEA44ED821B622400070F483 /* HairListTableViewController.swift in Sources */,
+				EE9B55292176D4B3002D3DE1 /* HairdDetailController.swift in Sources */,
+				EEA44ED421B61EA10070F483 /* HairDetails.swift in Sources */,
+				EEA44ED621B61FF90070F483 /* HairListTableViewCell.swift in Sources */,
 				B11AA22E1FF0E7C500F98203 /* NSString+SHA1.m in Sources */,
+				EEA44ED221B6181D0070F483 /* RatingControl.swift in Sources */,
 				B136C5D21FEE80B200658B76 /* Ability.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
