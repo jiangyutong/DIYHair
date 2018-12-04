@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2A7E69B3E15DB4ABA8CDE828 /* Pods_Ability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97E9928C0B428F5620852D1 /* Pods_Ability.framework */; };
+		652362E921B56C1D00D985C2 /* BarberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652362E821B56C1D00D985C2 /* BarberViewController.swift */; };
+		652362EB21B56F2200D985C2 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652362EA21B56F2200D985C2 /* registerViewController.swift */; };
+		652362ED21B5750600D985C2 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652362EC21B5750600D985C2 /* ForgetPasswordViewController.swift */; };
+		653A3D5221B627C700888D91 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A3D5121B627C700888D91 /* HomePageViewController.swift */; };
+		65F64D7D21B6AE6B0041E7BA /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F64D7C21B6AE6B0041E7BA /* CustomerViewController.swift */; };
 		B11AA22E1FF0E7C500F98203 /* NSString+SHA1.m in Sources */ = {isa = PBXBuildFile; fileRef = B11AA22D1FF0E7C500F98203 /* NSString+SHA1.m */; };
 		B136C5D21FEE80B200658B76 /* Ability.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B136C5D01FEE80B200658B76 /* Ability.xcdatamodeld */; };
 		B136C5E21FEE80B200658B76 /* DIY HairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B136C5E11FEE80B200658B76 /* DIY HairTests.swift */; };
@@ -16,7 +21,6 @@
 		EE53D475217B203A00959AA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE53D472217B203A00959AA0 /* Main.storyboard */; };
 		EE53D477217B25FF00959AA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE53D476217B25FF00959AA0 /* Assets.xcassets */; };
 		EE9B55272176D4A2002D3DE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9B55262176D4A2002D3DE1 /* AppDelegate.swift */; };
-		EE9B55292176D4B3002D3DE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9B55282176D4B3002D3DE1 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,11 @@
 
 /* Begin PBXFileReference section */
 		2465112042A47600978D33AA /* Pods-Ability.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ability.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ability/Pods-Ability.debug.xcconfig"; sourceTree = "<group>"; };
+		652362E821B56C1D00D985C2 /* BarberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberViewController.swift; sourceTree = "<group>"; };
+		652362EA21B56F2200D985C2 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		652362EC21B5750600D985C2 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		653A3D5121B627C700888D91 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		65F64D7C21B6AE6B0041E7BA /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		6D6AB2AEB71F22A6A013BEEC /* Pods-Ability.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ability.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ability/Pods-Ability.release.xcconfig"; sourceTree = "<group>"; };
 		B11AA22C1FF0E79400F98203 /* NSString+SHA1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SHA1.h"; sourceTree = "<group>"; };
 		B11AA22D1FF0E7C500F98203 /* NSString+SHA1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SHA1.m"; sourceTree = "<group>"; };
@@ -56,7 +65,6 @@
 		EE53D473217B203A00959AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE53D476217B25FF00959AA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE9B55262176D4A2002D3DE1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE9B55282176D4B3002D3DE1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +132,11 @@
 				EE9B55262176D4A2002D3DE1 /* AppDelegate.swift */,
 				EE53D470217B203A00959AA0 /* LaunchScreen.storyboard */,
 				EE53D472217B203A00959AA0 /* Main.storyboard */,
-				EE9B55282176D4B3002D3DE1 /* ViewController.swift */,
+				65F64D7C21B6AE6B0041E7BA /* CustomerViewController.swift */,
+				652362EC21B5750600D985C2 /* ForgetPasswordViewController.swift */,
+				652362EA21B56F2200D985C2 /* registerViewController.swift */,
+				652362E821B56C1D00D985C2 /* BarberViewController.swift */,
+				653A3D5121B627C700888D91 /* HomePageViewController.swift */,
 				B11AA22C1FF0E79400F98203 /* NSString+SHA1.h */,
 				B11AA22D1FF0E7C500F98203 /* NSString+SHA1.m */,
 				B136C5D81FEE80B200658B76 /* Info.plist */,
@@ -380,9 +392,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE9B55272176D4A2002D3DE1 /* AppDelegate.swift in Sources */,
-				EE9B55292176D4B3002D3DE1 /* ViewController.swift in Sources */,
 				B11AA22E1FF0E7C500F98203 /* NSString+SHA1.m in Sources */,
+				65F64D7D21B6AE6B0041E7BA /* CustomerViewController.swift in Sources */,
+				652362EB21B56F2200D985C2 /* registerViewController.swift in Sources */,
+				653A3D5221B627C700888D91 /* HomePageViewController.swift in Sources */,
+				652362ED21B5750600D985C2 /* ForgetPasswordViewController.swift in Sources */,
 				B136C5D21FEE80B200658B76 /* Ability.xcdatamodeld in Sources */,
+				652362E921B56C1D00D985C2 /* BarberViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
